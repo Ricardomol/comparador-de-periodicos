@@ -1,0 +1,18 @@
+{
+  "name": "comparador_de_periodicos",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~4.12.4",
+    "jade": "~1.9.2",
+    "request": "~2.55.0",
+    "xml2js": "~0.4.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo Molina",
+  "license": "BSD-2-Clause"
+}
