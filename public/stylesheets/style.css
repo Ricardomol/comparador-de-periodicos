@@ -1,1 +1,11 @@
 h1 {text-align: center;}
+
+.columna {
+	//border: solid 1px;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	width: 20%;
+	min-width: 400px;
+	margin: 5px;
+}
