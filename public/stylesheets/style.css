@@ -1,11 +1,15 @@
-h1 {text-align: center;}
+h1 {
+	text-align: center;
+}
 
 .columna {
-	//border: solid 1px;
 	display: inline-block;
 	position: relative;
 	vertical-align: top;
 	width: 20%;
 	min-width: 400px;
 	margin: 5px;
+	background: #eeeeee;
+	padding: 0px 4px 4px 4px;
+	border-radius: 5px;
 }
