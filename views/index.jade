@@ -2,32 +2,66 @@ html
   head
     title Comparador de periódicos.
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.3/packery.pkgd.min.js')
+    script(src='http://draggabilly.desandro.com/draggabilly.pkgd.js')
     script(type='text/javascript' src='clientScripts/loader.js')
-    link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
     script(type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
 
   body
     h1 Comparador de periódicos
 
-    div.columna
-      h2 El País
-      div#elpais
+    div#container
 
-    div.columna
-      h2 El Mundo
-      div#elmundo
+      div.columna
+        div.cabecera-col
+          h2 El País
+        div.contenido-col
+          div#elpais
 
-    div.columna
-      h2 ABC
-      div#abc
+      div.columna
+        div.cabecera-col
+          h2 El Mundo
+        div.contenido-col
+          div#elmundo
 
-    div.columna
-      h2 La Razón
-      div#larazon
+      div.columna
+        div.cabecera-col
+          h2 ABC
+        div.contenido-col
+          div#abc
 
-    div.columna
-      h2 La Vanguardia
-      div#lavanguardia
-        
+      div.columna
+        div.cabecera-col
+          h2 La Razón
+        div.contenido-col
+          div#larazon
+
+      div.columna
+        div.cabecera-col
+          h2 La Vanguardia
+        div.contenido-col
+          div#lavanguardia
+
+
+  script.
+    var $container = $('#container');
+    $container.packery({
+      itemSelector: '.columna',
+      gutter: 5
+    });
+
+    // bind draggabilly events to item elements
+    $container.find('.columna').each( makeEachDraggable );
+
+    function makeEachDraggable( i, itemElem ) {
+      // make element draggable with Draggabilly
+      var draggie = new Draggabilly( itemElem );
+      // bind Draggabilly events to Packery
+      $container.packery( 'bindDraggabillyEvents', draggie );
+    }
+
+    setTimeout(function() {alert("han pasado dos segundos");}, 2000);
+    $container.packery('reloadItems');

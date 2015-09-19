@@ -22,7 +22,7 @@ app.get('/elpaisloader', function(req, res) {
     $("title").slice(0, 20).each(function() {
       var title = $(this) + "<br>";
       console.log("*** Title = " + $(this).text() + "<br>");
-      titles.push("<a href='" + $(this).next().text() +"' target='_blank'>"+$(this).text() + "</a><br>");
+      titles.push("<ul><a href='" + $(this).next().text() +"' target='_blank'>"+$(this).text() + "</a></ul>");
       console.log("*** Link = " + $(this).next().text());
       links.push($(this).next().text());
       console.log(" ");
@@ -46,7 +46,7 @@ app.get('/elmundoloader', function(req, res) {
     $("title").slice(0, 20).each(function() {
       var title = $(this) + "<br>";
       console.log("*** Title = " + $(this).text() + "<br>");
-      titles.push("<a href='" + $(this).next().next().next().text() +"' target='_blank'>"+$(this).text() + "</a><br>");
+      titles.push("<ul><a href='" + $(this).next().next().next().text() +"' target='_blank'>"+$(this).text() + "</a></ul>");
       console.log("*** Link = " + $(this).next().next().next().text());
       links.push($(this).next().text());
       console.log(" ");
@@ -70,7 +70,7 @@ app.get('/abcloader', function(req, res) {
     $("title").slice(0, 20).each(function() {
       var title = $(this) + "<br>";
       console.log("*** Title = " + $(this).text() + "<br>");
-      titles.push("<a href='" + $(this).next().text() +"' target='_blank'>"+$(this).text() + "</a><br>");
+      titles.push("<ul><a href='" + $(this).next().text() +"' target='_blank'>"+$(this).text() + "</a></ul>");
       console.log("*** Link = " + $(this).next().next().text());
       links.push($(this).next().text());
       console.log(" ");
@@ -95,7 +95,7 @@ app.get('/larazonloader', function(req, res) {
     $("title").slice(0, 20).each(function() {
       var title = $(this) + "<br>";
       console.log("*** Title = " + $(this).text() + "<br>");
-      titles.push("<a href='" + $(this).next().text() +"' target='_blank'>"+$(this).text() + "</a><br>");
+      titles.push("<ul><a href='" + $(this).next().text() +"' target='_blank'>"+$(this).text() + "</a></ul>");
       console.log("*** Link = " + $(this).next().next().text());
       links.push($(this).next().text());
       console.log(" ");
@@ -119,7 +119,7 @@ app.get('/lavanguardialoader', function(req, res) {
     $("title").slice(0, 20).each(function() {
       var title = $(this) + "<br>";
       console.log("*** Title = " + $(this).text() + "<br>");
-      titles.push("<a href='" + $(this).next().text() +"' target='_blank'>"+$(this).text() + "</a><br>");
+      titles.push("<ul><a href='" + $(this).next().text() +"' target='_blank'>"+$(this).text() + "</a></ul>");
       console.log("*** Link = " + $(this).next().next().text());
       links.push($(this).next().text());
       console.log(" ");

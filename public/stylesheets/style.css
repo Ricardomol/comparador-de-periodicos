@@ -1,15 +1,43 @@
+a:hover {
+	text-decoration: none;
+}
+
 h1 {
 	text-align: center;
+}
+
+h2 {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+ul {
+	padding: 5px;
+	margin-bottom: 2px;
+	list-style-type: circle;
 }
 
 .columna {
 	display: inline-block;
 	position: relative;
+	border: 1px solid grey;
 	vertical-align: top;
 	width: 20%;
 	min-width: 400px;
-	margin: 5px;
+	margin: 0px;
+	border-radius: 5px;
+}
+
+
+.columna .cabecera-col {
+	background: #e0e0e0;
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px dotted grey;
+}
+
+
+.columna .contenido-col {
 	background: #eeeeee;
 	padding: 0px 4px 4px 4px;
-	border-radius: 5px;
 }
