@@ -19,7 +19,7 @@ app.get('/elpaisloader', function(req, res) {
 
     var titles = [];
     var links = [];
-    $("title").slice(0, 20).each(function() {
+    $("title").slice(1, 21).each(function() {
       var title = $(this) + "<br>";
       console.log("*** Title = " + $(this).text() + "<br>");
       titles.push("<ul><a href='" + $(this).next().text() +"' target='_blank'>"+$(this).text() + "</a></ul>");
@@ -43,7 +43,7 @@ app.get('/elmundoloader', function(req, res) {
 
     var titles = [];
     var links = [];
-    $("title").slice(0, 20).each(function() {
+    $("title").slice(1, 21).each(function() {
       var title = $(this) + "<br>";
       console.log("*** Title = " + $(this).text() + "<br>");
       titles.push("<ul><a href='" + $(this).next().next().next().text() +"' target='_blank'>"+$(this).text() + "</a></ul>");
@@ -67,7 +67,7 @@ app.get('/abcloader', function(req, res) {
 
     var titles = [];
     var links = [];
-    $("title").slice(0, 20).each(function() {
+    $("title").slice(0, 21).each(function() {
       var title = $(this) + "<br>";
       console.log("*** Title = " + $(this).text() + "<br>");
       titles.push("<ul><a href='" + $(this).next().text() +"' target='_blank'>"+$(this).text() + "</a></ul>");
@@ -92,7 +92,7 @@ app.get('/larazonloader', function(req, res) {
 
     var titles = [];
     var links = [];
-    $("title").slice(0, 20).each(function() {
+    $("title").slice(0, 21).each(function() {
       var title = $(this) + "<br>";
       console.log("*** Title = " + $(this).text() + "<br>");
       titles.push("<ul><a href='" + $(this).next().text() +"' target='_blank'>"+$(this).text() + "</a></ul>");
@@ -116,7 +116,7 @@ app.get('/lavanguardialoader', function(req, res) {
 
     var titles = [];
     var links = [];
-    $("title").slice(0, 20).each(function() {
+    $("title").slice(1, 21).each(function() {
       var title = $(this) + "<br>";
       console.log("*** Title = " + $(this).text() + "<br>");
       titles.push("<ul><a href='" + $(this).next().text() +"' target='_blank'>"+$(this).text() + "</a></ul>");
