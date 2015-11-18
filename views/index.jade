@@ -63,9 +63,6 @@ html
       gutter: 5
     });
 
-    // bind draggabilly events to item elements
-    $container.find('.columna').each( makeEachDraggable );
-
     function makeEachDraggable( i, itemElem ) {
       // make element draggable with Draggabilly
       var draggie = new Draggabilly( itemElem );
