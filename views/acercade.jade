@@ -16,11 +16,12 @@ html
 
   body
 
-    h1 Comparador de periódicos
+    h1
+      a(href='/') Comparador de periódicos
     div.subtitulo
-      a(href='acercade') Acerca de
+      span Acerca de
       span  |
-      a(href='contactar')  Contactar
+      a(class='button', href='contactar')  Contactar
 
     // AdSense
     script(async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
@@ -29,44 +30,10 @@ html
       (adsbygoogle = window.adsbygoogle || []).push({});
 
     div#container
+      div
+        h3 Acerca de esta web
+        div.texto Esta web ha sido programada por Ricardo Molina. La tecnología empleada es Node.js y Express.
 
-      div.columna.primera
-        div.cabecera-col
-          h2 El País
-        div.contenido-col
-          div#elpais
-
-      div.columna
-        div.cabecera-col
-          h2 El Mundo
-        div.contenido-col
-          div#elmundo
-
-      div.columna
-        div.cabecera-col
-          h2 ABC
-        div.contenido-col
-          div#abc
-
-      div.columna
-        div.cabecera-col
-          h2 La Razón
-        div.contenido-col
-          div#larazon
-
-      div.columna
-        div.cabecera-col
-          h2 La Vanguardia
-        div.contenido-col
-          div#lavanguardia
-
-
-  script.
-    var $container = $('#container');
-    $container.packery({
-      itemSelector: '.columna',
-      gutter: 5
-    });
 
 
   // Analytics

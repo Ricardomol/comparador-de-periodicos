@@ -131,6 +131,14 @@ app.get('/lavanguardialoader', function(req, res) {
 
 });
 
+app.get('/acercade', function(req, res) {
+  res.render('acercade.jade', { title: 'Acerca de' });
+});
+
+app.get('/contactar', function(req, res) {
+  res.render('contactar.jade', { title: 'Contactar' });
+});
+
 
 app.listen(3000, function() {
   console.log('Listening on port 3000... hostia app4 coño ya joder');

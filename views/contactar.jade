@@ -16,11 +16,12 @@ html
 
   body
 
-    h1 Comparador de periódicos
+    h1
+      a(href='/') Comparador de periódicos
     div.subtitulo
-      a(href='acercade') Acerca de
+      a(class='button', href='acercade') Acerca de
       span  |
-      a(href='contactar')  Contactar
+      span  Contactar
 
     // AdSense
     script(async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
@@ -29,44 +30,12 @@ html
       (adsbygoogle = window.adsbygoogle || []).push({});
 
     div#container
-
-      div.columna.primera
-        div.cabecera-col
-          h2 El País
-        div.contenido-col
-          div#elpais
-
-      div.columna
-        div.cabecera-col
-          h2 El Mundo
-        div.contenido-col
-          div#elmundo
-
-      div.columna
-        div.cabecera-col
-          h2 ABC
-        div.contenido-col
-          div#abc
-
-      div.columna
-        div.cabecera-col
-          h2 La Razón
-        div.contenido-col
-          div#larazon
-
-      div.columna
-        div.cabecera-col
-          h2 La Vanguardia
-        div.contenido-col
-          div#lavanguardia
-
-
-  script.
-    var $container = $('#container');
-    $container.packery({
-      itemSelector: '.columna',
-      gutter: 5
-    });
+      div
+        h3 Contactar
+        div.texto Puedes contactar conmigo, Ricardo Molina, el creador de esta web mediante
+          a(href='http://twitter.com/richas' target='_blank')  Twitter
+          span  o mi
+          a(href='mailto:ricardo.molina.sendra@gmail.com')  email.
 
 
   // Analytics
